@@ -6,7 +6,7 @@ import {
 } from '@builder.io/qwik-city'
 import { isDev } from '@builder.io/qwik/build'
 
-// import './main.css'
+import './main.css'
 
 export default component$(() => {
 	/**
