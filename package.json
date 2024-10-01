@@ -4,20 +4,29 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"preview": "serve dist",
-		"lint:check": "pnpm biome check .",
-		"lint:write": "pnpm biome check --write .",
-		"type:check": "tsc --noEmit"
+		"build": "qwik build",
+		"build.client": "vite build",
+		"build.preview": "vite build --ssr src/entry.preview.tsx",
+		"build.server": "vite build -c adapters/static/vite.config.ts",
+		"build.types": "tsc --incremental --noEmit",
+		"dev": "vite --mode ssr",
+		"dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+		"lint.check": "pnpm biome check .",
+		"lint.write": "pnpm biome check --write .",
+		"preview": "qwik build preview && vite preview --open",
+		"type.check": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.2",
-		"serve": "^14.2.3",
+		"@builder.io/qwik-city": "^1.9.0",
 		"typescript": "^5.5.3",
 		"vite": "^5.4.1"
 	},
 	"dependencies": {
-		"@builder.io/qwik": "^1.8.0"
+		"@builder.io/qwik": "^1.9.0"
+	},
+	"volta": {
+		"node": "22.5.1",
+		"pnpm": "9.4.0"
 	}
 }
