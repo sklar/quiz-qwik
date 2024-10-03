@@ -26,7 +26,8 @@
 	},
 	"dependencies": {
 		"@builder.io/qwik": "^1.9.0",
-		"open-props": "^1.7.6"
+		"open-props": "^1.7.6",
+		"party-js": "^2.2.0"
 	},
 	"volta": {
 		"node": "22.5.1",

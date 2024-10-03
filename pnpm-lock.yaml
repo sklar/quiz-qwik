@@ -14,6 +14,9 @@ importers:
       open-props:
         specifier: ^1.7.6
         version: 1.7.6
+      party-js:
+        specifier: ^2.2.0
+        version: 2.2.0
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.2
@@ -896,6 +899,9 @@ packages:
 
   parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
+
+  party-js@2.2.0:
+    resolution: {integrity: sha512-50hGuALCpvDTrQLPQ1fgUgxKIWAH28ShVkmeK/3zhO0YJyCqkhrZhQEkWPxDYLvbFJ7YAXyROmFEu35gKpZLtQ==}
 
   periscopic@3.1.0:
     resolution: {integrity: sha512-vKiQ8RRtkl9P+r/+oefh25C3fhybptkHKCZSPlcXiJux2tJF55GnEj3BVn4A5gKfq9NWWXXrxkHBwVPUfH0opw==}
@@ -2041,6 +2047,8 @@ snapshots:
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
       is-hexadecimal: 2.0.1
+
+  party-js@2.2.0: {}
 
   periscopic@3.1.0:
     dependencies:
